@@ -396,11 +396,11 @@ header.fl-hdr {
 }
 .fl-content-sec-4-innr{
     padding-bottom: 70px;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
     margin-left: -25px;
     margin-right: -25px;
-    background-size: cover;
+    background-size: cover !important;
 }
 .fl-content-sec-4-dsc{
     padding-top: 10px;
@@ -847,14 +847,16 @@ header.fl-hdr {
     background-repeat: repeat-x!important;
     background-size: cover!important;
 }
-.fl-pkg-grd-col-hdr span{
+.fl-pkg-grd-col-hdr span {
     font-size: 32px;
     line-height: 36px;
     font-family: 'BarlowCondensed-Bold';
     padding: 20px 10px 30px;
-    background-repeat: repeat-x!important;
+    background-repeat: repeat-x !important;
     border-radius: 5px 5px 0 0;
     text-shadow: 0px 2px #019bd4;
+    background-size: cover !important;
+    background-position: bottom center !important;
 }
 .order1 .fl-pkg-grd-col-hdr span{
     text-shadow: 0px 2px #b82121;
