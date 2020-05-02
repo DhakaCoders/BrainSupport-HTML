@@ -78,6 +78,14 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'BarlowCondensed-Bold';
+    src: url(assets/fonts/BarlowCondensed-Bold/barlowcondensed-bold.woff2) format('woff2'), 
+         url(assets/fonts/BarlowCondensed-Bold/barlowcondensed-bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Barlow-Medium';
     src: url(assets/fonts/Barlow-Medium/Barlow-Medium.woff2) format('woff2'), 
          url(assets/fonts/Barlow-Medium/Barlow-Medium.woff) format('woff');
@@ -100,6 +108,25 @@
     url('assets/fonts/Montserrat-Medium/montserrat-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url(assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff2) format('woff2'), 
+         url(assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'OswaldBold';
+    src: url(assets/fonts/OswaldBold/OswaldBold.woff2) format('woff2'), 
+         url(assets/fonts/OswaldBold/OswaldBold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -307,6 +334,9 @@ header.fl-hdr {
     border-radius: 50px;
     top: 57px;
 }
+.fl-health-item-dsc p sup{
+    top: -5px;
+}
 
 
 
@@ -338,6 +368,7 @@ header.fl-hdr {
     margin-bottom: 60px;
     color: #ff8a00;
     text-transform: uppercase;
+    font-family: 'SourceSansPro-Regular';
 }
 .special-offer-dsc h2{
     font-family: 'OswaldBold';
@@ -351,6 +382,7 @@ header.fl-hdr {
     vertical-align: baseline;
     margin-bottom: 10px;
     color: #17b1ef;
+    font-family: 'SourceSansPro-Regular';
 }
 
 .fl-content-sec-3-wrp{
@@ -358,11 +390,12 @@ header.fl-hdr {
     background: #fff;
 }
 .fl-content-sec-3-img{
-    width: 36%;
+    width: 37%;
     float: left;
+    padding-left: 20px;
 }
 .fl-content-sec-3-des {
-    width: 64%;
+    width: 63%;
     float: left;
     padding: 40px 36px 0;
 }
@@ -395,12 +428,15 @@ header.fl-hdr {
     font-size: 30px;
 }
 .fl-content-sec-4-innr{
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     background-repeat: no-repeat !important;
     background-position: bottom center !important;
     margin-left: -25px;
     margin-right: -25px;
     background-size: cover !important;
+}
+.fl-cogni-img {
+    padding-bottom: 10px;
 }
 .fl-content-sec-4-dsc{
     padding-top: 10px;
@@ -451,6 +487,8 @@ header.fl-hdr {
     top: 50%;
     z-index: 3;
     transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .fl-content-formula-6-sec-wrp{
@@ -489,15 +527,20 @@ header.fl-hdr {
 .fl-health-item-btn{
     max-width: 580px;
     width: 100%;
+    height: 95px;
     float: left;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center center !important;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 .fl-health-item-btn h3 {
     color: #fff;
     font-family: 'Vollkorn-Semibold';
-    padding: 20px 0 15px 200px;
+    padding: 8px 0 11px 200px;
+    margin-bottom: 0;
 }
 .fl-health-item-dsc {
     padding-left: 200px;
@@ -518,13 +561,14 @@ header.fl-hdr {
 }
 .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn{
     float: right;
+    justify-content: center;
 }
 .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-dsc {
     padding-left: 20px;
     padding-right: 200px;
 }
 .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
-    padding: 20px 130px 15px 0;
+    padding: 8px 130px 11px 0;
     text-align: center;
 }
 
@@ -551,7 +595,7 @@ header.fl-hdr {
 .fl-content-7-profile-dsc{
     background: #fff;
     text-align: center;
-    padding: 30px 30px 30px 100px;
+    padding: 30px 30px 30px 40px;
     position: relative;
 }
 .fl-content-7-profile-dsc:before{
@@ -818,26 +862,30 @@ header.fl-hdr {
     padding-bottom: 10px;
 }
 .fl-pkg-grd-controller > ul > li:nth-child(2) .fl-pkg-grd-ftr ul{
-    padding-top: 10px;
+    padding-top: 0;
 }
 .fl-pkg-grd-controller > ul > li:nth-child(2) .fl-pkg-price{
     margin-bottom: 20px;
 }
 .fl-pkg-grd-controller > ul > li:nth-child(2) .fl-pkg-grd-col-fea-img{
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 45px;
 }
-.fl-pkg-grd-controller > ul > li:nth-child(2) .fl-pkg-grd-ftr{
-    padding-top: 25px;
+.fl-pkg-grd-controller > ul > li:nth-child(2) .fl-pkg-grd-ftr {
+    padding-top: 12px;
 }
 .fl-pkg-save-price {
     color: #f00;
-    padding-top: 15px;
+    padding-top: 6px;
+}
+.order1 .fl-pkg-save-price strong{
+    font-size: 27px;
 }
 .fl-pkg-grd-col-hdr{
     border-radius: 5px 5px 0 0;
 }
-.fl-pkg-grd-col-hdr span,.fl-pkg-grd-col-hdr strong{
+.fl-pkg-grd-col-hdr span,
+.fl-pkg-grd-col-hdr strong{
     display: block;
 }
 .fl-pkg-grd-col-hdr{
@@ -851,23 +899,20 @@ header.fl-hdr {
     font-size: 32px;
     line-height: 36px;
     font-family: 'BarlowCondensed-Bold';
-    padding: 20px 10px 30px;
+    padding: 14px 10px 15px;
     background-repeat: repeat-x !important;
     border-radius: 5px 5px 0 0;
-    text-shadow: 0px 2px #019bd4;
     background-size: cover !important;
     background-position: bottom center !important;
 }
-.order1 .fl-pkg-grd-col-hdr span{
-    text-shadow: 0px 2px #b82121;
+.order1 .fl-pkg-grd-col-hdr span {
+    padding: 17px 10px 20px;
 }
-.order2 .fl-pkg-grd-col-hdr span{
-    text-shadow: 0px 2px #27caae;
-}
-.fl-pkg-grd-col-hdr strong{
-    padding: 0 10px 12px 10px;
+
+.fl-pkg-grd-col-hdr strong {
+    padding: 0 10px 6px 10px;
     font-size: 40px;
-    line-height: 45px;
+    line-height: 40px;
     font-family: 'BarlowCondensed-Bold';
     text-shadow: 0px 2px #595653;
 }
@@ -875,7 +920,10 @@ header.fl-hdr {
     margin: 0 auto;
     position: relative;
     display: table;
-    padding: 28px 15px 15px;
+    padding: 28px 15px 30px;
+}
+.order2 .fl-pkg-grd-col-fea-img{
+    padding-bottom: 38px;
 }
 .fl-pkg-grd-col-fea-img div{
     display: inline-block;
@@ -931,12 +979,27 @@ header.fl-hdr {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+.order1 .fl-pkg-price:after{
+    width: 10px;
+    height: 10px;
+}
+.order1 .fl-creditcards {
+    padding-top: 15px;
+    padding-bottom: 4px;
+}
 .fl-pkg-price strong {
     font-size: 68px;
     line-height: 58px;
     font-weight: normal;
     font-family: 'Barlow-Bold';
     display: inline-block;
+}
+.order1 .fl-pkg-price strong{
+    font-size: 94px;
+    line-height: 85px;
+}
+.order1 .fl-pkg-price:before{
+    top: 0;
 }
 .fl-pkg-price sup {
     position: absolute;
@@ -949,9 +1012,20 @@ header.fl-hdr {
 .fl-pkg-price sub {
     position: absolute;
     right: -5px;
-    font-size: 38px;
+    font-size: 35px;
     bottom: 9px;
     font-family: 'BarlowCondensed-Regular';
+}
+.order1 .fl-pkg-price sub{
+    font-size: 38px;
+}
+.order1 .fl-pkg-save-price {
+    padding-top: 2px;
+}
+.order1 .fl-pkg-price sup {
+    right: -8px;
+    font-size: 65px;
+    top: -5px;
 }
 .fl-creditcards{
     padding-left: 8px;
@@ -961,7 +1035,7 @@ header.fl-hdr {
     background-color: #0f1314;
     color: #fff;
     text-align: center;
-    padding: 55px 0 65px;
+    padding: 55px 0 40px;
     font-size: 14px;
     line-height: 19px;
 }
@@ -998,10 +1072,10 @@ header.fl-hdr {
     padding-right: 10px;
     display: table;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 7px;
 }
 .fl-add-to-cart-btn-img{
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .fl-add-to-cart-btn-img a{
@@ -1043,7 +1117,7 @@ header.fl-hdr {
 }
 .fl-ftr-des{
     color: #6a6a6a;
-    padding: 0 10px;
+    padding: 0 80px;
 }
 
 
@@ -1071,87 +1145,83 @@ header.fl-hdr {
     .show-md{
         display: block!important;
     }
-    .acai-powerful-des p span.fl-txt-line-bg:last-child{
-        margin-right: -15px;
-        margin-left: -7px;
-        padding-left: 7px;
-        padding-right: 15px;
-    }
-
-    .ta-flt-rgt-img{
-        float: none !important;
-        text-align: center;
-    }
-    .ye-two-grid-rgt-img{
-        padding-bottom: 30px;
-        padding-top: 0;
-    }
-    .health-risks-grd-wrp li {
-        width: 100%;
-        max-width: 370px;
-    }
-    .rare-root-feature-wrp ul li .rare-root-feature-des{
-        padding-right: 45px !important;
-    }
-    .rare-root-feature-des p {
-        padding-right: 215px;
-    }
-    .rare-root-feature-des p br{
+    .special-offer-dsc h2 br{
         display: none;
     }
-    .rare-root-feature-lft-des h2,
-    .rare-root-feature-des h2,
-    .ta-title-headding h2 {
-        line-height: 44px;
+    .special-offer-dsc h5 {
+        margin-bottom: 40px;
     }
-    .rare-root-feature-wrp ul li.ta-root-feature-img .rare-root-feature-des {
-        padding-left: 170px;
-        padding-right: 20px !important;
-    }
-    .ta-root-feature-img .rare-root-feature-des p{
-        padding-right: 50px;
-    }
-    .profile-show-sec-wrp .fl-content-sec-4-head{
-        padding-left: 15px;
-        padding-right: 15px;
+    .special-offer-dsc {
+        padding: 50px 290px 60px 0;
     }
 
-    .full-width-1023{
-        width: 100%!important;
+    .fl-content-sec-3-img {
+        padding-left: 0;
     }
-    .out-stock-sec-grd-img-2{
+    .fl-content-sec-4-head h1 u {
+        font-size: 28px;
+    }
+    .bs-wrok-5-img {
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    .fl-content-7-profile-dsc blockquote br,
+    .fl-health-item-dsc p br,
+    .fl-content-6-fights-des p br,
+    .bs-wrok-5-dsc p br{
+        display: none;
+    }
+    .fl-content-8-img {
+        padding-top: 40px;
+        margin-left: -50px;
+    }
+    .order2 .fl-pkg-grd-col-fea-img {
         padding-bottom: 25px;
     }
+    .order1 .fl-pkg-price strong {
+        font-size: 85px;
+        line-height: 72px;
+    }
+    .order1 .fl-pkg-price sup {
+        right: -5px;
+        font-size: 60px;
+    }
+    .order1 .fl-creditcards {
+        padding-top: 10px;
+    }
+    .order1 .fl-pkg-save-price strong {
+        font-size: 25px;
+    }
+    .fl-pkg-grd-controller > ul > li:nth-child(2) .fl-pkg-grd-col-fea-img {
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    .order2 .fl-pkg-grd-col-fea-img {
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+    .order2 .fl-pkg-grd-ftr ul li {
+        padding: 3px 0 10px 40px;
+    }
+    .order2 .fl-add-to-cart-btn-img {
+        margin-bottom: 10px;
+    }
+    .order2 .fl-pkg-grd-ftr{
+        padding-top: 4px;
+    }
+    .fl-pkg-sec-hdr h1{
+        margin-bottom: 50px;
+    }
+    .pkg-area-con-bg {
+        padding: 50px 0 50px;
+    }
+
+
+        
 
 } 
 
 @media(max-width: 1023px){
-    .fl-content-sec-3-img {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    .fl-content-sec-3-wrp img {
-        max-width: 450px;
-    }
-    .fl-content-sec-3-des {
-        width: 100%;
-        float: left;
-        padding: 0;
-    }   
-    .acai-powerful-img {
-        width: 100%;
-        padding-right: 0;
-        text-align: center;
-        margin-bottom: 25px;
-    } 
-    .acai-powerful-des {
-        width: 100%;
-        padding-left:0;
-        padding-right: 0;
-    } 
-
-
 }
 
 @media(max-width: 991px){
@@ -1170,6 +1240,10 @@ header.fl-hdr {
     h5 {
         font-size: 20px
     }
+    .container {
+        max-width: 750px;
+        width: 100%;
+    }
     .hide-sm{
         display: none!important;
     }
@@ -1179,60 +1253,9 @@ header.fl-hdr {
     p br{
         display: none;
     }
-
-    .fl-shipping h4 {
-        font-size: 18px
+    .pull-right {
+        float: none !important;
     }
-    .special-offer-dsc h1 br{
-        display: none;
-    }
-    .special-offer-dsc {
-        padding: 80px 283px 80px 0;
-    }
-
-
-    .health-risks-grd-wrp li {
-        width: 100%;
-        max-width: 355px;
-    }
-    .rare-root-feature-lft-des h2,
-    .rare-root-feature-des h2,
-    .ta-title-headding h2 {
-        line-height: 38px;
-    }
-    .rare-root-feature-wrp ul li .rare-root-feature-des{
-        width: 100%;
-        padding: 25px 25px 0;
-    }
-    .rare-root-feature-wrp ul li {
-        padding-bottom: 40px !important;
-        text-align: center;
-    }
-    .rare-root-feature-wrp ul li img{
-        position: static;
-        padding-bottom: 40px;
-    }
-    .rare-root-feature-des p {
-        padding-right: 0;
-        text-align: left;
-    }
-    .rare-root-feature-wrp ul li .rare-root-feature-des {
-        padding-right: 25px !important;
-    }
-    .rare-root-feature-wrp ul li.ta-root-feature-img img {
-        position: static;
-    }
-    .rare-root-feature-wrp ul li.ta-root-feature-img .rare-root-feature-des {
-        padding-left: 20px;
-        padding-right: 20px !important;
-    }
-    .ta-root-feature-img .rare-root-feature-des p {
-        padding-right: 0;
-    }
-    .profile-show-sec-wrp .fl-content-sec-4-head h3 br{
-        display: none;
-    }
-
 
     .fl-ftr-top-sec-rgt-img {
         text-align: center;
@@ -1268,6 +1291,161 @@ header.fl-hdr {
     .pkg-area-con-bg-2{
         padding-bottom: 25px;
     }
+    .special-offer-dsc {
+        padding: 50px 180px 60px 0;
+    }
+
+    .fl-content-sec-3-img {
+        width: 100%;
+        text-align: center;
+    }
+    .bs-wrok-5-img img,
+    .fl-content-sec-3-img img{
+        width: auto;
+    }
+    .fl-content-sec-3-des {
+        padding: 0;
+        width: 100%;
+        padding-top: 40px;
+    }
+    .fl-content-sec-4-head h1 u {
+        font-size: 26px;
+    }
+    .fl-content-sec-4-innr{
+        padding-bottom: 60px;
+    }
+    .bs-wrok-5-img{
+        text-align: center;
+        padding-bottom: 30px;
+        padding-right: 0;
+    }
+    .bs-wrok-5-dsc-head {
+        padding-bottom: 40px;
+    }
+    .bs-wrok-5-dsc-head h1 br{
+        display: none;
+    }
+    .fl-content-6-fights-wrp ul li img {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+    .fl-content-6-fights-wrp ul li .fl-content-6-fights-des {
+        width: 100%;
+        padding: 25px 20px 10px 20px;
+        margin-top: 30px;
+    }
+    .fl-content-formula-6-sec-wrp {
+        padding-top: 60px;
+    }
+    .fl-health-item-wrp ul li {
+        float: left;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    .fl-health-item-img {
+        position: static;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .fl-health-item-inr {
+        padding-left: 10px;
+        padding-right: 10px;
+        min-height: 100%;
+    }
+    .fl-health-item-dsc {
+        padding-left: 0;
+        padding-top: 15px;
+        padding-right: 0;
+    }
+    .fl-health-item-btn {
+        max-width: 580px;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn{
+        float: none;
+        margin: 0 auto;
+    }
+    .fl-health-item-btn h3 {
+        padding: 8px 20px 11px 20px;
+    }
+    .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
+        padding: 8px 20px 11px 20px;
+    }
+    .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-dsc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-inr {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fl-content-7-profile-img {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .fl-content-7-profile-inr {
+        padding-left: 0;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(2n+2) .fl-content-7-profile-inr {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(3n+1){
+        padding-left: 40px !important;
+        padding-right: 0 !important;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(2n+2){
+        padding-left: 0 !important;
+        padding-right: 40px !important;
+    }
+    .fl-content-7-profile-dsc {
+        padding: 30px 20px 30px 20px;
+    }
+    .fl-content-7-profile-dsc:before{
+        left: -40px;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(2n+2) .fl-content-7-profile-dsc:after{
+        right: -40px;
+    }
+    .fl-content-8-img {
+        padding-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .fl-content-9-img-btm img,
+    .fl-content-9-img-tp img,
+    .fl-content-8-img img{
+        width: auto;
+    }
+    .fl-content-8-dsc {
+        padding-right: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .fl-content-9-img-tp {
+        margin-right: 0;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    .fl-content-9-img-btm {
+        margin-left: 0;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .fl-content-9-dsc-tp {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .fl-content-9-dsc-btm {
+        padding-right: 0;
+    }
 
 
 }
@@ -1276,14 +1454,12 @@ header.fl-hdr {
     .fl-shipping h4 {
         font-size: 16px
     }
-    .special-offer-dsc {
-        padding: 80px 185px 80px 0;
-    }
 }
 
 @media(max-width: 767px){
     body {
         font-size: 18px;
+        line-height: 1.3;
     }
     p{
        margin-bottom: 20px;
@@ -1310,13 +1486,6 @@ header.fl-hdr {
         display: block!important;
     }
 
-    .fl-advanced-des li img {
-        max-width: 23px;
-    }
-    .fl-advanced-des li {
-        position: relative;
-        padding: 5px 0 20px 38px;
-    }
 
     .health-risks-grd-wrp {
         padding-top: 30px;
@@ -1355,6 +1524,37 @@ header.fl-hdr {
     .fl-pkg-sec-bg-hdr h2 br{
         display: none;
     }
+    .special-offer-dsc {
+        padding: 50px 0 60px;
+    } 
+    .special-offer-dsc h2{
+        margin-bottom: 20px;
+    }
+    .special-offer-dsc h5 {
+        margin-bottom: 30px;
+    }
+    .fl-content-sec-4-head h1 u {
+        font-size: 24px;
+    }
+    .fl-content-6-fights-wrp ul li .fl-content-6-fights-des {
+        padding: 25px 10px 10px 10px;
+    }
+    .fl-health-item-btn {
+        max-width: 400px;
+        width: 100%;
+        height: 60px;
+    }
+    .fl-content-7-profile-head h1 {
+        margin-bottom: 40px;
+    }
+    .ftr-top-links ul {
+        padding-left: 0;
+    }
+    .ftr-top-links ul li {
+        padding-bottom: 20px;
+    }
+    
+
 
 }
 
@@ -1367,10 +1567,7 @@ header.fl-hdr {
     .fl-shipping img {
         width: 50px;
         height: 50px
-    }
-    .special-offer-dsc {
-        padding: 55px 0 65px;
-    }   
+    } 
     .acai-powerful h3 br{
         display: none;
     } 
@@ -1407,7 +1604,23 @@ header.fl-hdr {
     }
     .fl-ftr-top-sec strong{
         padding-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
+    }
+
+    .fl-content-7-profile-dsc:before{
+        display: none;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(2n+2) .fl-content-7-profile-dsc:after{
+        display: none;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(2n+2) {
+        padding-right: 0 !important;
+    }
+    .fl-content-7-profile-wrp ul li:nth-child(3n+1) {
+        padding-left: 0 !important;
+    }
+    .fl-content-7-profile-wrp ul li {
+        padding: 0 0 30px;
     }
 
 }
@@ -1467,6 +1680,19 @@ header.fl-hdr {
     .fl-ftr-nav ul li {
         padding: 0 16px;
         font-size: 17px;
+    }
+    .fl-health-item-btn {
+        max-width: 280px;
+        width: 100%;
+        height: 40px;
+        display: block;
+    }
+    .fl-health-item-btn h3 {
+        text-align: center;
+    }
+    .fl-health-item-img {
+        width: 250px;
+        height: 250px;
     }
 }
 
