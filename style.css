@@ -394,7 +394,9 @@ header.fl-hdr {
 }
 
 .fl-content-sec-4-wrp{
-    padding-bottom: 20px;
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+    background-size: cover !important;
 }
 .fl-content-sec-4-head h1{
     color: #1195ca;
@@ -413,12 +415,7 @@ header.fl-hdr {
     font-size: 30px;
 }
 .fl-content-sec-4-innr{
-    padding-bottom: 75px;
-    background-repeat: no-repeat !important;
-    background-position: bottom center !important;
-    margin-left: -25px;
-    margin-right: -25px;
-    background-size: cover !important;
+    padding-bottom: 65px;
 }
 .fl-cogni-img {
     padding-bottom: 10px;
