@@ -24,14 +24,6 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'OpenSansItalic';
-    src: url(assets/fonts/OpenSansItalic/OpenSansItalic.woff2) format('woff2'), 
-         url(assets/fonts/OpenSansItalic/OpenSansItalic.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Vollkorn-Semibold';
@@ -102,13 +94,6 @@
     font-display: swap;
 }
 
-@font-face {
-  font-family: 'Montserrat-Medium';
-  src: url('assets/fonts/Montserrat-Medium/montserrat-medium-webfont.woff2') format('woff2'),
-    url('assets/fonts/Montserrat-Medium/montserrat-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
     font-family: 'SourceSansPro-Regular';
@@ -368,7 +353,7 @@ header.fl-hdr {
     margin-bottom: 60px;
     color: #ff8a00;
     text-transform: uppercase;
-    font-family: 'SourceSansPro-Regular';
+    font-family: 'BarlowCondensed-Regular';
 }
 .special-offer-dsc h2{
     font-family: 'OswaldBold';
@@ -517,30 +502,47 @@ header.fl-hdr {
 .fl-health-item-img{
     position: absolute;
     left: 0;
-    top: 0;
+    top: -9px;
     width: 307px;
     height: 307px;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
+    z-index: 3;
 }
 .fl-health-item-btn{
-    max-width: 580px;
-    width: 100%;
-    height: 95px;
     float: left;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 }
 .fl-health-item-btn h3 {
     color: #fff;
     font-family: 'Vollkorn-Semibold';
-    padding: 8px 0 11px 200px;
+    padding: 23px 100px 23px 200px;
     margin-bottom: 0;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(180, 179, 179);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(180, 179, 179);
+    box-shadow: 0px 0px 10px 0px rgb(180, 179, 179);
+    position: relative;
+    z-index: 2;
+    max-width: 575px;
+    width: 100%;
+}
+.fl-health-item-btn h3:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #22aae1;
+    border-radius: 45px;
+    border:7px solid#fff;
+    z-index: -1;
+}
+.fl-health-item-wrp ul li:nth-child(3) .fl-health-item-btn h3{
+    padding-right: 60px;
 }
 .fl-health-item-dsc {
     padding-left: 200px;
@@ -568,8 +570,17 @@ header.fl-hdr {
     padding-right: 200px;
 }
 .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
-    padding: 8px 130px 11px 0;
+    padding: 23px 230px 23px 100px;
     text-align: center;
+}
+.fl-health-item-wrp ul li:nth-child(4) .fl-health-item-btn h3 {
+    padding-right: 265px;
+}
+.fl-health-item-wrp ul li:nth-child(6) .fl-health-item-btn h3 {
+    padding-right: 260px;
+}
+.fl-health-item-wrp ul li:nth-child(8) .fl-health-item-btn h3 {
+    padding-right: 275px;
 }
 
 .fl-content-sec-7-sec-wrp{
@@ -1215,6 +1226,9 @@ header.fl-hdr {
     .pkg-area-con-bg {
         padding: 50px 0 50px;
     }
+    .fl-content-sec-4-dsc p br{
+        display: none;
+    }
 
 
         
@@ -1356,22 +1370,22 @@ header.fl-hdr {
     }
     .fl-health-item-dsc {
         padding-left: 0;
-        padding-top: 15px;
+        padding-top: 30px;
         padding-right: 0;
-    }
-    .fl-health-item-btn {
-        max-width: 580px;
-        width: 100%;
-        float: none;
-        margin: 0 auto;
-        justify-content: center;
     }
     .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn{
         float: none;
         margin: 0 auto;
     }
+    .fl-health-item-btn {
+        float: none;
+    }
     .fl-health-item-btn h3 {
-        padding: 8px 20px 11px 20px;
+        padding: 25px 20px 20px 20px !important;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
     .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
         padding: 8px 20px 11px 20px;
@@ -1539,11 +1553,6 @@ header.fl-hdr {
     .fl-content-6-fights-wrp ul li .fl-content-6-fights-des {
         padding: 25px 10px 10px 10px;
     }
-    .fl-health-item-btn {
-        max-width: 400px;
-        width: 100%;
-        height: 60px;
-    }
     .fl-content-7-profile-head h1 {
         margin-bottom: 40px;
     }
@@ -1680,12 +1689,6 @@ header.fl-hdr {
     .fl-ftr-nav ul li {
         padding: 0 16px;
         font-size: 17px;
-    }
-    .fl-health-item-btn {
-        max-width: 280px;
-        width: 100%;
-        height: 40px;
-        display: block;
     }
     .fl-health-item-btn h3 {
         text-align: center;
