@@ -1326,6 +1326,8 @@ header.fl-hdr {
         position: static;
         transform: none;
         text-align: center;
+        display: table;
+        margin: 0 auto;
     }
     .fl-content-6-fights-wrp ul li .fl-content-6-fights-des {
         width: 100%;
