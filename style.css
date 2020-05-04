@@ -1266,6 +1266,9 @@ header.fl-hdr {
     .fl-content-sec-4-head h1 u{
         font-size: 35px;
     }
+    .fl-ftr-des {
+        padding: 0 40px;
+    }
 
 
         
