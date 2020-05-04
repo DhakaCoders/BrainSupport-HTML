@@ -539,7 +539,7 @@ header.fl-hdr {
 .fl-health-item-btn h3 {
     color: #fff;
     font-family: "PTSerif-Bold";
-    padding: 10px 100px 20px 200px;
+    padding: 13px 100px 18px 200px;
     margin-bottom: 0;
     border-radius: 45px;
     -webkit-box-shadow: 0px 0px 10px 0px rgb(180, 179, 179);
@@ -566,7 +566,7 @@ header.fl-hdr {
     z-index: -1;
 }
 .fl-health-item-wrp ul li:nth-child(3) .fl-health-item-btn h3{
-    padding-right: 60px;
+    padding-right: 45px;
 }
 .fl-health-item-dsc {
     padding-left: 200px;
@@ -1426,6 +1426,9 @@ header.fl-hdr {
         margin: 0 auto;
         text-align: center;
     }
+    .fl-health-item-wrp ul li:nth-child(3) .fl-health-item-btn h3{
+        padding: 15px 20px 20px 20px;
+    }
     .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
         padding: 15px 20px 20px 20px;
     }
@@ -1720,6 +1723,21 @@ header.fl-hdr {
     .fl-content-sec-4-head h1 u {
         font-size: 31px;
     }
+
+.fl-content-8-sec-wrp,
+.fl-content-sec-7-sec-wrp,
+.fl-content-9-sec-wrp,
+.pkg-area-con-bg,
+.fl-content-sec-5-wrp,
+.fl-content-formula-6-sec-wrp{
+    padding-top: 40px;
+}
+.fl-content-7-profile-img{
+    margin-bottom: 10px;
+}
+.fl-content-4-btm-sec{
+    padding-top: 15px;
+}
 }
 
 @media(max-width: 479px){
