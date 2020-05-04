@@ -1,11 +1,4 @@
 @font-face {
-  font-family: 'Calisto MT';
-  src: url('assets/fonts/Calis-MTBol/CalisMTBol.woff2') format('woff2'),
-    url('assets/fonts/Calis-MTBol/CalisMTBol.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Barlow-Medium';
   src: url('assets/fonts/Barlow-Medium/barlow-medium-webfont.woff2') format('woff2'),
     url('assets/fonts/Barlow-Medium/barlow-medium-webfont.woff') format('woff');

@@ -34,14 +34,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Vollkorn-Bold';
-    src: url(assets/fonts/Vollkorn-Bold/Vollkorn-Bold.woff2) format('woff2'), 
-    	 url(assets/fonts/Vollkorn-Bold/Vollkorn-Bold.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Merriweather-Black';
@@ -85,15 +77,6 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'Barlow-Extrabold';
-    src: url(assets/fonts/Barlow-Extrabold/Barlow-Extrabold-webfont.woff2) format('woff2'), 
-         url(assets/fonts/Barlow-Extrabold/Barlow-Extrabold-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 @font-face {
     font-family: 'SourceSansPro-Regular';
@@ -424,6 +407,10 @@ header.fl-hdr {
     padding-top: 10px;
 }
 
+.fl-content-4-btm-sec{
+    padding-bottom: 25px;
+}
+
 .fl-content-sec-5-wrp {
     background: #1195ca;
     padding-top: 65px;
@@ -472,7 +459,9 @@ header.fl-hdr {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-
+.fl-health-item-wrp{
+    padding-top: 15px;
+}
 .fl-content-formula-6-sec-wrp{
     padding-top: 75px;
 }
@@ -480,7 +469,7 @@ header.fl-hdr {
     color: #1195ca;
     text-align: center;
     font-family: 'Vollkorn-Semibold';
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .fl-health-item-wrp ul li{
@@ -1295,9 +1284,6 @@ header.fl-hdr {
     }
     .fl-pkg-sec-bg-hdr{
         margin-bottom: 45px;
-    }
-    .out-stock-sec-hdr h2{
-        font-size: 35px;
     }
     .pkg-area-con-bg-2{
         padding-bottom: 25px;
