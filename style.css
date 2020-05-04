@@ -116,12 +116,12 @@
 }
 
 @font-face {
-  font-family: 'PTSerif-Bold';
-  src: url('assets/fonts/PTSerif-Bold/PTSerif-Bold.woff2') format('woff2'),
-       url('assets/fonts/PTSerif-Bold/PTSerif-Bold.woff') format('woff'),
-      font-weight: normal;
-      font-style: normal;
-      font-display:swap;
+  font-family: "PTSerif-Bold";
+  src: url("assets/fonts/PTSerif-Bold/PTSerif-Bold.woff") format("woff"),
+    url("assets/fonts/PTSerif-Bold/PTSerif-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -412,19 +412,20 @@ header.fl-hdr {
 }
 .fl-content-sec-4-head h1{
     color: #1195ca;
-    font-family: 'Merriweather-Black';
+    font-family: "PTSerif-Bold";
     line-height: 1.1;
     margin-bottom: 40px;
+    font-size: 70px;
 }
 .fl-content-sec-4-head h1 span{
-    font-size: 22px;
+    font-size: 30px;
     color: #000;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     display: inline-block;
     vertical-align: baseline;
 }
 .fl-content-sec-4-head h1 u{
-    font-size: 30px;
+    font-size: 50px;
 }
 .fl-content-sec-4-innr{
     padding-bottom: 65px;
@@ -446,10 +447,10 @@ header.fl-hdr {
     padding-bottom: 25px;
 }
 .bs-wrok-5-dsc-head h1{
-   font-family: 'PTSerif-Bold';
+   font-family: "PTSerif-Bold";
    color: #fff;
    text-shadow: 2px 3px #0f86b5;
-   font-weight: 700;
+   font-weight: 400;
 }
 .bs-wrok-5-dsc-head {
     padding-bottom: 50px;
@@ -478,7 +479,7 @@ header.fl-hdr {
 }
 .fl-content-6-fights-des h1 {
     color: #1195ca;
-    font-family: 'Vollkorn-Semibold';
+    font-family: "PTSerif-Bold";
     margin-bottom: 20px;
 }
 .fl-content-6-fights-wrp ul li img {
@@ -499,7 +500,7 @@ header.fl-hdr {
 .fl-content-formula-6-head h1{
     color: #1195ca;
     text-align: center;
-    font-family: 'Vollkorn-Semibold';
+    font-family: "PTSerif-Bold";
     margin-bottom: 35px;
 }
 
@@ -537,8 +538,8 @@ header.fl-hdr {
 }
 .fl-health-item-btn h3 {
     color: #fff;
-    font-family: 'Vollkorn-Semibold';
-    padding: 20px 100px 15px 200px;
+    font-family: "PTSerif-Bold";
+    padding: 10px 100px 20px 200px;
     margin-bottom: 0;
     border-radius: 45px;
     -webkit-box-shadow: 0px 0px 10px 0px rgb(180, 179, 179);
@@ -593,7 +594,7 @@ header.fl-hdr {
     padding-right: 200px;
 }
 .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
-    padding: 20px 230px 15px 100px;
+    padding: 15px 230px 20px 100px;
     text-align: center;
 }
 .fl-health-item-wrp ul li:nth-child(4) .fl-health-item-btn h3 {
@@ -614,7 +615,7 @@ header.fl-hdr {
 .fl-content-7-profile-head h1{
     text-align: center;
     color: #fff;
-    font-family: 'Vollkorn-Semibold';
+    font-family: "PTSerif-Bold";
     margin-bottom: 50px;
     text-shadow: 2px 3px #0f86b5;
 }
@@ -696,7 +697,7 @@ header.fl-hdr {
 }
 .fl-content-8-dsc-head h1{
     text-align: center;
-    font-family: 'Vollkorn-Semibold';
+    font-family: "PTSerif-Bold";
     margin-bottom: 30px;
 }
 .fl-content-8-dsc{
@@ -720,7 +721,7 @@ header.fl-hdr {
     padding: 0 10px;
 }
 .fl-content-9-head h1 {
-    font-family: 'Vollkorn-Semibold';
+    font-family: "PTSerif-Bold";
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
@@ -814,7 +815,7 @@ header.fl-hdr {
     color: #000;
 }
 .fl-pkg-sec-hdr h1{
-    font-family: 'Vollkorn-Semibold';
+    font-family: "PTSerif-Bold";
     margin-bottom: 80px;
     margin-top: 0;
     color: #000;
@@ -1249,14 +1250,21 @@ header.fl-hdr {
     .order2 .fl-pkg-grd-ftr{
         padding-top: 4px;
     }
-    .fl-pkg-sec-hdr h1{
-        margin-bottom: 50px;
-    }
     .pkg-area-con-bg {
         padding: 50px 0 50px;
     }
     .fl-content-sec-4-dsc p br{
         display: none;
+    }
+    .fl-content-sec-4-head h1 span{
+        font-size: 28px;
+    }
+    .fl-content-sec-4-head h1{
+        font-size: 60px;
+        line-height: 1;
+    }
+    .fl-content-sec-4-head h1 u{
+        font-size: 35px;
     }
 
 
@@ -1409,14 +1417,14 @@ header.fl-hdr {
         float: none;
     }
     .fl-health-item-btn h3 {
-        padding: 20px 20px 15px 20px;
+        padding: 15px 20px 20px 20px;
         max-width: 500px;
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
     .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-btn h3 {
-        padding: 20px 20px 15px 20px;
+        padding: 15px 20px 20px 20px;
     }
     .fl-health-item-wrp ul li:nth-child(2n+2) .fl-health-item-dsc {
         padding-left: 0;
@@ -1496,7 +1504,9 @@ header.fl-hdr {
         font-size: 27px;
         line-height: 1.2;
     }
-
+    .fl-pkg-sec-hdr h1{
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width:830px){
@@ -1583,7 +1593,7 @@ header.fl-hdr {
         margin-bottom: 30px;
     }
     .fl-content-sec-4-head h1 u {
-        font-size: 24px;
+        font-size: 32px;
     }
     .fl-content-6-fights-wrp ul li .fl-content-6-fights-des {
         padding: 25px 10px 10px 10px;
@@ -1610,7 +1620,15 @@ header.fl-hdr {
     .special-offer-dsc h5{
         font-size: 18px;
     }
-
+    .fl-content-sec-4-head h1 span {
+        font-size: 26px;
+    }
+    .fl-content-sec-4-head h1 {
+        font-size: 55px;
+    }
+    .fl-pkg-sec-hdr h1{
+        margin-bottom: 35px;
+    }
 }
 
 @media(max-width: 639px){
@@ -1689,6 +1707,16 @@ header.fl-hdr {
     .special-offer-dsc h5{
         font-size: 17px;
     }
+    .fl-content-sec-4-head h1 {
+        font-size: 50px;
+    }
+    .fl-content-sec-4-head h1 span {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .fl-content-sec-4-head h1 u {
+        font-size: 31px;
+    }
 }
 
 @media(max-width: 479px){
@@ -1753,6 +1781,12 @@ header.fl-hdr {
     .fl-health-item-img {
         width: 250px;
         height: 250px;
+    }
+    .fl-content-sec-4-head h1 {
+        font-size: 45px;
+    }
+    .fl-content-sec-4-head h1 u {
+        font-size: 30px;
     }
 }
 
