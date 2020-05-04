@@ -1,38 +1,124 @@
 @font-face {
-  font-family: 'Barlow-Medium';
-  src: url('assets/fonts/Barlow-Medium/barlow-medium-webfont.woff2') format('woff2'),
-    url('assets/fonts/Barlow-Medium/barlow-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'OpenSans-Regular';
+    src: url(assets/fonts/OpenSans-Regular/OpenSans-Regular.woff2) format('woff2'), 
+       url(assets/fonts/OpenSans-Regular/OpenSans-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'Barlow-Bold';
-  src: url('assets/fonts/Barlow-Bold/barlow-bold-webfont.woff2') format('woff2'),
-    url('assets/fonts/Barlow-Bold/barlow-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'OpenSans-Semibold';
+    src: url(assets/fonts/OpenSans-Semibold/OpenSans-Semibold.woff2) format('woff2'), 
+         url(assets/fonts/OpenSans-Semibold/OpenSans-Semibold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(assets/fonts/OpenSans-Bold/OpenSans-Bold.woff2) format('woff2'), 
+       url(assets/fonts/OpenSans-Bold/OpenSans-Bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'BarlowCondensed-Bold';
-  src: url('assets/fonts/BarlowCondensed-Bold/barlowcondensed-bold-webfont.woff2') format('woff2'),
-    url('assets/fonts/BarlowCondensed-Bold/barlowcondensed-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BarlowCondensed-Regular';
-  src: url('assets/fonts/BarlowCondensed-Regular/BarlowCondensed-Regular.woff2') format('woff2'),
-    url('assets/fonts/BarlowCondensed-Regular/BarlowCondensed-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Vollkorn-Semibold';
+    src: url(assets/fonts/Vollkorn-Semibold/Vollkorn-Semibold.woff2) format('woff2'), 
+         url(assets/fonts/Vollkorn-Semibold/Vollkorn-Semibold.woff) format('woff');
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
 }
 
 
 @font-face {
-  font-family: 'OswaldBold';
-  src: url('assets/fonts/OswaldBold/OswaldBold.woff2') format('woff2'),
-       url('assets/fonts/OswaldBold/OswaldBold.woff') format('woff'),
-      font-weight: 700;
+    font-family: 'Merriweather-Black';
+    src: url(assets/fonts/Merriweather-Black/Merriweather-Black.woff2) format('woff2'), 
+       url(assets/fonts/Merriweather-Black/Merriweather-Black.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: url(assets/fonts/Barlow-Bold/barlow-bold-webfont.woff2) format('woff2'), 
+       url(assets/fonts/Barlow-Bold/barlow-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BarlowCondensed-Regular';
+    src: url(assets/fonts/BarlowCondensed-Regular/BarlowCondensed-Regular.woff2) format('woff2'), 
+         url(assets/fonts/BarlowCondensed-Regular/BarlowCondensed-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BarlowCondensed-Bold';
+    src: url(assets/fonts/BarlowCondensed-Bold/barlowcondensed-bold.woff2) format('woff2'), 
+         url(assets/fonts/BarlowCondensed-Bold/barlowcondensed-bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Barlow-Medium';
+    src: url(assets/fonts/Barlow-Medium/Barlow-Medium.woff2) format('woff2'), 
+         url(assets/fonts/Barlow-Medium/Barlow-Medium.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url(assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff2) format('woff2'), 
+         url(assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url(assets/fonts/SourceSansPro-Bold/SourceSansPro-Bold.woff2) format('woff2'), 
+         url(assets/fonts/SourceSansPro-Bold/SourceSansPro-Bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OswaldBold';
+    src: url(assets/fonts/OswaldBold/OswaldBold.woff2) format('woff2'), 
+         url(assets/fonts/OswaldBold/OswaldBold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('assets/fonts/MontserratMedium/MontserratMedium.woff2') format('woff2'),
+       url('assets/fonts/MontserratMedium/MontserratMedium.woff') format('woff'),
+      font-weight: normal;
       font-style: normal;
+      font-display:swap;
 }
 
+@font-face {
+  font-family: 'PTSerif-Bold';
+  src: url('assets/fonts/PTSerif-Bold/PTSerif-Bold.woff2') format('woff2'),
+       url('assets/fonts/PTSerif-Bold/PTSerif-Bold.woff') format('woff'),
+      font-weight: normal;
+      font-style: normal;
+      font-display:swap;
+}
