@@ -1215,6 +1215,9 @@ header.fl-hdr {
     .fl-content-sec-4-dsc p br{
         display: none;
     }
+    .fl-ftr-des {
+        padding: 0 40px;
+    }
 
 
         
